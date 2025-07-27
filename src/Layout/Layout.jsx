@@ -3,7 +3,7 @@ import awards from '../assets/awards.svg'
 import burger from '../assets/Hamburger_icon.svg.png'
 import logo from '../assets/logo.svg'
 import socials from '../assets/socials.svg'
-import useDarkSide from '../config/useDarkMode'
+import useDarkSide from './useDarkMode'
 
 const Layout = () => {
 	 const [theme, toggleTheme] = useDarkSide()

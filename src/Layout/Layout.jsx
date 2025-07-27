@@ -39,7 +39,7 @@ const Layout = () => {
 						<li>Contacts</li>
 						
 					</ul>
-					<button className='dark:bg-[black] dark:text-white bg-white text-black px-[30px] py-[10px] rounded' onClick={toggleTheme}>{localStorage.getItem('theme')}</button>
+					<button className='dark:bg-[black] dark:text-white bg-white text-black px-[30px] py-[10px] rounded' onClick={toggleTheme}>{ theme}</button>
 					<button className='bg-[#7772F1] font-[Roboto] rounded text-white px-[20px] max-w-[200px] min-h-[50px]'>
 						Talk to a human
 					</button>

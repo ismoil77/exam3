@@ -35,7 +35,7 @@ export default function MySwiperImg({ user,idUser }) {
   }
   useEffect(() => {
     getData()
-  },[])
+  },[user])
 	return (
 		<Swiper
 			// slidesPerView={3}

@@ -117,7 +117,7 @@ const HomePage = () => {
 						</button>
 					</div>
 					<div className=''>
-						<img className='max-w-[500px]' src={peoples} alt='' />
+						<img className='max-w-[500px] max-sm:w-[400px]' src={peoples} alt='' />
 					</div>
 				</div>
 				<div className='flex w-[50%] max-sm:flex-col max-sm:w-[40%] justify-between mx-auto'>

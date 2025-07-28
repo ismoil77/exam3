@@ -125,7 +125,8 @@ export default function AboutUserPage() {
           }} className='w-[50px] h-[50px] max-sm:mx-auto' />
           <ImageUploader todoId={task.id} getUser={getUser} />
 			  </div>
-			  <div className="h-[400px] mt-[30px]">
+        <div className="h-[400px] mt-[30px]">
+          
 				  <MySwiperImg user={task} idUser={id} />
 				  
 			  </div>

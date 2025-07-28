@@ -66,14 +66,14 @@ export default function DataTable() {
 											<span className='text-gray-500'>No Image</span>
 										)}
 									</td>
-									<td>
+									<td className=''>
 										<Link to={`aboutUserPage/${user.id}`}>
-											<button className='bg-[#7772F1] px-[20px] rounded'>
+											<button className='bg-[#7772F1] px-[20px] rounded '>
 												ALL ACTION +INFO
 											</button>
 										</Link>
 										<button
-											className='bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg font-medium'
+											className='bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg font-medium '
 											onClick={async () => {
 												try {
 													await axios.delete(

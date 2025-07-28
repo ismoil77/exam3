@@ -21,7 +21,7 @@ const SimpleImageUpload = ({ todoId,getUser }) => {
         headers: { 'Content-Type': 'multipart/form-data' },
 		});
 		 getUser()
-		 location.reload()
+		 
       alert("YES ok LEGENDA ISMOIL")
     } catch (err) {
       console.error(err);

@@ -107,18 +107,7 @@ export default function AboutUserPage() {
 />
       )}
 
-         <Link to={'/'}> <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg font-medium" onClick={async () => {
-            try {
-              await axios.delete(`https://to-dos-api.softclub.tj/api/to-dos?id=${task.id}`)
-              
-              getUser()
-            } catch (error) {
-              console.error(error);
-              
-            }
-          }}>
-            Delete
-				  </button></Link>
+        
 				 
 				  <Link to={'/'}>
 					   <button className="border border-gray-400 hover:bg-gray-700 px-6 py-2 rounded-lg font-medium h-[100%] max-sm:w-[100%]">

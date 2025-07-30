@@ -4,9 +4,11 @@ import burger from '../assets/Hamburger_icon.svg.png'
 import logo from '../assets/logo.svg'
 import socials from '../assets/socials.svg'
 import useDarkSide from './useDarkMode'
+import { useTranslation } from 'react-i18next'
 
 const Layout = () => {
-	 const [theme, toggleTheme] = useDarkSide()
+	const [theme, toggleTheme] = useDarkSide()
+	const {t,i18n}=useTranslation()
 	return (
 		<div className=''>
 			<div className='bg-gradient-to-r from-[#1E212C] via-[#232441] to-[#1E212C]'>
@@ -43,6 +45,10 @@ const Layout = () => {
 					<button className='bg-[#7772F1] font-[Roboto] rounded text-white px-[20px] max-w-[200px] min-h-[50px]'>
 						Talk to a human
 					</button>
+					<select name="" value={i18n.language} onChange={(e)=>i18n.changeLanguage(e.target.value)} id="">
+<option value="en">en</option>
+<option value="ru">ru</option>
+					</select>
 				</div>
 			</div>
 

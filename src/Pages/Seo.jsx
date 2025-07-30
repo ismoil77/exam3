@@ -11,7 +11,10 @@ import subsChart from '../assets/illustration (1).svg'
  import AOS from 'aos';
     import 'aos/dist/aos.css';
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+
 const Seo = () => {
+	const {t,i18n}=useTranslation()
 		 useEffect(() => {
         AOS.init({
         
@@ -35,28 +38,26 @@ const Seo = () => {
 				<div className='w-[70%] mx-auto flex justify-center items-center h-full max-sm:flex-col max-sm:items-center pt-[80px]'>
 					<div className='max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center text-center'>
 						<h1 className='text-white text-[20px]'>
-							Home / Services / Search Engine Optimization
+							
 						</h1>
 						<h1 className='text-[60px] text-[white] max-sm:text-center font-bold font-[Lato] max-sm:text-[30px]'>
-							Search Engine Optimization
+							{t("seo_title")}
 						</h1>
 						<h1 className='text-[grey] text-[20px] max-w-[700px]'>
-							Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui
-							pellentesque enim integer facilisi. Ultrices vitae tempor amet nec
-							euismod non.
+							{t('seo_desc')}
 						</h1>
 						<div className='text-white text-left mt-[50px] w-[70%] mx-auto'>
 							<h1 className='font-[Lato] font-semibold text-[20px]'>
-								Your website URL
+								{t('url_label')}
 							</h1>
 							<div className='mt-[20px]'>
 								<input
 									type='text'
-									placeholder='http://yoursite.com'
+									placeholder={t('url_placeholder')}
 									className='placeholder:text-[white] bg-[#3c3e4e] h-[50px] px-[10px] w-[70%] rounded-l'
 								/>
 								<button className='w-[30%] bg-[#7772F1] h-[50px] rounded-r'>
-									Analyse your site
+									{t('analyze')}
 								</button>
 							</div>
 						</div>

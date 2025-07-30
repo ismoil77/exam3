@@ -86,6 +86,11 @@ export default function AboutUserPage() {
 							<span className="text-gray-500">No Image</span>
 						 )}
           </div>
+            <div className="flex justify-between items-center pt-2">
+            <span className="text-gray-400">Image CNT:</span>
+          <h1>{task.images.length}</h1>
+					   
+          </div>
         </div>
 
         <div className="flex justify-center gap-4 mt-8 max-sm:flex-col">
